@@ -4,4 +4,4 @@
   tasks:
   - name: Pulling the Scientific Calculator Image
     shell:
-      cmd: docker pull suchi135/sci_calc
+      cmd: docker pull suchi135/sci_calc:21
