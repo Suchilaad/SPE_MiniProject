@@ -4,5 +4,5 @@
   tasks:
     - name: Pull calculator.Calculator Image from Docker Hub
       docker_image:
-        name: suchi135/sci_calc
+        name: suchi135/sci_calc:latest
         source: pull
