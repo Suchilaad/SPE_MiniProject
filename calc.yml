@@ -2,7 +2,6 @@
 - name: Pull Docker Image
   hosts: localhost
   tasks:
-    - name: Pull calculator.Calculator Image from Docker Hub
-      docker_image:
-        name: suchi135/sci_calc:latest
-        source: pull
+  - name: Pulling the Scientific Calculator Image
+    shell:
+      cmd: docker pull suchi135/sci_calc:latest
