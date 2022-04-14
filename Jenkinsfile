@@ -1,7 +1,7 @@
 pipeline {
 environment { 
-        registry = "docker4harshit/calculator" 
-        registryCredential = 'docker4harshit' 
+        registry = "suchi135/sci_calc" 
+        registryCredential = 'suchi135' 
         dockerImage = '' 
     }
   agent any
@@ -42,8 +42,8 @@ stage('Push image to DockerHub') {
         } 
         stage('Run Container on Dev Server'){
 	steps{
-	bat 'docker run -p 8081:8081 -d docker4harshit/calculator:3'
-                 }
+		sh 'docker run -p 8081:8081 -d suchi135/sci_calc'
+        }
     }
   }
 }
