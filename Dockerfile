@@ -3,4 +3,4 @@ MAINTAINER Suchi Laad suchilaad148@gmail.com
 WORKDIR ./
 COPY ./target/devops_calculator-1.0-SNAPSHOT-jar-with-dependencies.jar ./
 EXPOSE 8080
-CMD ["java", "-jar", "devops_calculator-1.0-SNAPSHOT-jar-with-dependencies.jar"]
+ENTRYPOINT ["java", "-jar", "devops_calculator-1.0-SNAPSHOT-jar-with-dependencies.jar"]
